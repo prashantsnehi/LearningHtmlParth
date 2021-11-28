@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html></html>
+    <head>
+        <title>Music Shop - Buy guitars,drums and more</title>
+        <style>
+            *{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 300;
+            }
+            body ,ul ,li{
+                margin: 0;
+                padding: 0;
+            }
+            p,li,h1,h2,h3,h4{
+                color: darkslategrey;
+            }
+            body{
+                background-color: azure;
+            }
+            .wrapper{
+                width: 96%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2%;
+            }
+            header{
+                background-color: papayawhip;
+                padding: 10px 0;
+            }
+            
+            .logo{
+                margin: 0;
+                background: url('./logo.png') ;
+                background-size: 70px 70px;
+                float: left;
+                width: 70px;
+                height: 70px;
+            }
+
+            header nav {
+                float: right;
+            }
+            header:after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            header nav li{
+                list-style-type: none;
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            header nav li a{
+                text-decoration: none;
+                color: darkslategray;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                align-items: center;
+                margin: 10px;
+            }
+
+            #slides, #slider {
+               align-items: center;
+                margin: auto;
+                padding: 30px;
+                border: 2px solid red;
+                border-radius: 20px;
+                box-shadow: 0 20px 20px 0 grey;
+            }
+            #main-banner{
+                width: 100%;
+                max-height: 500px;
+                overflow: hidden;
+            }
+            #slider{
+                overflow: hidden;
+            }
+            #slides{
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 18s slidy infinite;
+            }
+            #slides img{
+                width: 20%;
+                float: left;
+            }
+            @keyframes slidy{
+                0% { left: 0%; }
+                28%
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="logo"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="main banner">
+            <div id="slider">
+                <div id="slides">
+                    <img src="music-1.jpeg" alt="banner">
+                   <img src="music-2.jpeg" alt="banner">
+                    <img src="music-3.jpeg" alt="banner">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
