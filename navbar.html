@@ -57,14 +57,6 @@
                 font-size: 15px;
                 text-transform: uppercase;
             }
-
-            img {
-                width: 100%;
-                height: auto;
-                align-items: center;
-                margin: 10px;
-            }
-
             #slides, #slider {
                align-items: center;
                 margin: auto;
@@ -88,15 +80,20 @@
                 left: 0;
                 text-align: left;
                 font-size: 0;
-                animation: 18s slidy infinite;
+                animation: 6s slidy infinite;
             }
             #slides img{
                 width: 20%;
                 float: left;
             }
-            @keyframes slidy{
+            @keyframes slidy {
                 0% { left: 0%; }
-                28%
+                28% { left: 0%; }
+                33% { left: -100%; }
+                61% { left: -100%; }
+                66% { left: -200%; }
+                94% { left: -200%; }
+                100% { left: 0%; }
             }
         </style>
     </head>
@@ -122,6 +119,28 @@
                     <img src="music-3.jpeg" alt="banner">
                 </div>
             </div>
+        </div>
+        <div class="wrapper">
+            <section id="usp">
+                <ul>
+                    <li>
+                        <img src="guitar.png" width="100px" height="auto">
+                        <h2>Wide range of Products</h2>
+                    </li>
+                    <li>
+                        <img src="music-store.png" width="100px" height="auto">
+                        <h2>Multiple Stores</h2>
+                    </li>
+                    <li>
+                        <img src="happiness.png" width="100px" height="auto">
+                        <h2>Happy Customers</h2>
+                    </li>
+                    <li>
+                        <img src="rating.png" width="100px" height="auto">
+                        <h2>Satifacton Guaranteed</h2>
+                    </li>
+                </ul>
+            </section>
         </div>
     </body>
 </html>
