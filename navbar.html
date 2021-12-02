@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html></html>
+<html>
     <head>
         <title>Music Shop - Buy guitars,drums and more</title>
         <style>
@@ -30,7 +30,7 @@
             
             .logo{
                 margin: 0;
-                background: url('./logo.png') ;
+                background: url('logo.png') ;
                 background-size: 70px 70px;
                 float: left;
                 width: 70px;
@@ -61,7 +61,6 @@
                align-items: center;
                 margin: auto;
                 padding: 30px;
-                border: 2px solid red;
                 border-radius: 20px;
                 box-shadow: 0 20px 20px 0 grey;
             }
@@ -95,6 +94,53 @@
                 94% { left: -200%; }
                 100% { left: 0%; }
             }
+            #usp{
+                margin-top: 60px;
+            }
+            #usp li{
+                float: left;
+                width: 23%;
+                padding: 1%;
+                text-align: center;
+                list-style-type: none;
+            }
+            #usp li img{
+                height: 80px;
+                padding: 20px;
+                background-color: coral;
+            }
+            #usp li h2{
+                font-size: 16px;
+                font-weight: 400;
+            }
+            #usp:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            h1{
+                text-align: center;
+            }
+            #products{
+                padding-top: 30px;
+                margin-top: 30px;
+                border-top: 2px solid lightgrey;
+            }
+            #products li{
+                float: left;
+                width: 32%;
+                list-style-type: none;
+                text-align: center;
+            }
+            #our-products{
+                text-align: center;
+            }
+            footer{
+                width: 100%;
+                background-color: darkslategray;
+                padding: 30px 0;
+                margin-top: 60px;
+            }
         </style>
     </head>
     <body>
@@ -121,7 +167,7 @@
             </div>
         </div>
         <div class="wrapper">
-            <section id="usp">
+            <section id="usp"></section>
                 <ul>
                     <li>
                         <img src="guitar.png" width="100px" height="auto">
@@ -142,5 +188,35 @@
                 </ul>
             </section>
         </div>
+        <div class="wrapper">
+            <section id="products">
+                <h1 id="our-products">Our Products</h1>
+                <ul>
+                    <li>
+                        <img src="guitar.jpg" width="100px">
+                        <h2>Guitar</h2>
+                    </li>
+                    <li>
+                        <img src="drums.jpg" width="100px">
+                        <h2>drums</h2>
+                    </li>
+                    <li>
+                        <img src="violin].jpg" width="100px">
+                        <h2>violin</h2>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <ul>
+                    <li>Manny's Music Shop - Delhi,india</li>
+                    <li>Address: ABC Avenue, 123-345</li>
+                    <li>Contact Us: 70113 54054</li>
+                    <li>Email: parth.snehi2101@gmail.com</li>
+                </ul>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YNZCciWx8_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </footer> 
     </body>
 </html>
