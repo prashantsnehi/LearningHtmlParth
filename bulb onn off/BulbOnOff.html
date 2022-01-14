@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Click below to do a COVID - 19 Test</p>
+    <button onclick="myfunction()">Click here!</button>
+
+
+
+    <p id="demo"></p>
+
+    <script>
+        function myfunction() {
+            var fever, cough, bodypain, msg;
+            var fever = prompt("are you feverish", "yes")
+            var cough = prompt("Do you have cough", "yes")
+            var bodypain = prompt("do you have bodypain", "yes")
+            if (fever == "yes") {
+                if (cough == "yes") {
+                    if (bodypain == "yes") {
+                        msg = "you need to contact a doctor(101) or the cops(100) ASAP"
+                        document.getElementById("demo").innerHTML = msg;
+                    }
+                    else if (bodypain == "no") {
+                        msg = "if you feel pulkish or get a bodypain please contact a doctor, in the mean time please stay at home";
+                        document.getElementById("demo").innerHTML = msg
+                    }
+                    else {
+                        msg = "I could not really catch that";
+                        document.getElementById(demo).innerHTML = msg;
+
+                    }
+                }
+                else if (cough == "no") {
+
+                    if (bodypain == "yes") {
+                        msg = "Maybe the bodypain is just due to fever, nevertheless stay home stay safe";
+                        document.getElementById(demo).innerHTML = msg;
+                    }
+                    else if (bodypain == "no") {
+                        msg = "don't worry its cough";
+                        document.getElementById(demo).innerHTML = msg
+                    }
+                    else {
+                        msg = "I could really catch that";
+                        document.getElementById(demo).innerHTML = msg
+                    }
+                }
+            }
+            else {
+
+                msg = "I could not really catch that";
+                document.getElementById("demo").innerHTML = msg;
+            }
+        }
+    </script>
+</body>
+
+</html>
